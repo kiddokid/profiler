@@ -22,7 +22,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
 	compileOnly 'org.projectlombok:lombok'
+	
+	compile group: 'org.flywaydb', name: 'flyway-core', version: '5.2.4'
+	compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.8', ext: 'pom'
+
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
